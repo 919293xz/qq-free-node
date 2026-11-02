@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>qq-free-node · 免费节点状态页</title>
+<style>
+  :root { color-scheme: dark; }
+  body { margin:0; min-height:100vh; display:flex; align-items:center; justify-content:center;
+         font-family: "Segoe UI", "Microsoft YaHei", sans-serif; background:#0d1117; color:#e6edf3; }
+  .card { max-width:560px; padding:40px; border:1px solid #30363d; border-radius:12px; background:#161b22; }
+  h1 { margin:0 0 8px; font-size:22px; }
+  .ok { color:#3fb950; font-weight:600; }
+  .meta { color:#8b949e; font-size:14px; line-height:1.8; }
+  code { background:#21262d; padding:2px 6px; border-radius:4px; }
+  a { color:#58a6ff; text-decoration:none; }
+</style>
+</head>
+<body>
+<div class="card">
+  <h1>qq-free-node <span class="ok">● ONLINE</span></h1>
+  <p class="meta">
+    托管于 GitHub Pages（免费 · 不绑卡 · 全球 CDN）<br>
+    仓库：<a href="https://github.com/919293xz/qq-free-node">919293xz/qq-free-node</a><br>
+    本页构建时间：<span id="t"></span><br>
+    用途：免费静态托管 / 状态页 / 公告板 —— 内容改自仓库 <code>index.html</code>，推送即生效
+  </p>
+  <script>document.getElementById('t').textContent = new Date().toLocaleString('zh-CN');</script>
+</div>
+</body>
+</html>
